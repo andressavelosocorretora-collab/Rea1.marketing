@@ -19,6 +19,9 @@
     rodape.push(p.nome + " (SUSEP " + p.susep + ")");
   });
   document.getElementById("parceiros-rodape").textContent = rodape.join("; ");
+  document.querySelectorAll(".js-parceiros").forEach(function (el) {
+    el.textContent = parceiros.map(function (p) { return p.nome + " (CNPJ " + p.cnpj + ", SUSEP " + p.susep + ")"; }).join("; ");
+  });
 
   // ---------- WhatsApp ----------
   function waLink(msg) {

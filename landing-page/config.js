@@ -5,16 +5,16 @@
  */
 window.SITE_CONFIG = {
   // Sua empresa (quem aparece como responsável pela página)
-  empresa: "[Nome Fantasia da Empresa]",
-  razaoSocial: "[Razão Social Ltda]",
-  cnpj: "[00.000.000/0001-00]",
+  empresa: "Demais Consultoria",
+  razaoSocial: "[Razão Social — conforme cartão CNPJ]",
+  cnpj: "39.274.138/0001-14",
   endereco: "[Rua Exemplo, 123 — Bairro — Cidade/UF — CEP 00000-000]",
-  telefone: "[(00) 0000-0000]",
+  telefone: "(11) 94858-5998",
   email: "[contato@seudominio.com.br]",
   horario: "Segunda a sexta, das 9h às 18h",
 
   // WhatsApp: somente números, com DDI 55 + DDD. Ex.: "5511999999999"
-  whatsapp: "[5500000000000]",
+  whatsapp: "5511948585998",
 
   // Corretora(s) parceira(s) que fazem a intermediação/contratação.
   // Obrigatório enquanto sua empresa não tiver registro próprio.

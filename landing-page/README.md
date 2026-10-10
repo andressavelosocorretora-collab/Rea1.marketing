@@ -9,6 +9,7 @@ Página estática (HTML/CSS/JS, sem dependências) para receber o tráfego dos a
 | `politica-de-privacidade.html` | Política de privacidade (LGPD), obrigatória para Google e Meta |
 | `termos-de-uso.html` | Termos de uso |
 | `style.css` / `app.js` | Visual e funcionamento (não precisa mexer) |
+| `pagina-pronta.html` | **Versão em arquivo único** (tudo embutido: visual, política e termos). Gerada com `python3 build.py` depois de editar o `config.js` |
 
 ---
 
