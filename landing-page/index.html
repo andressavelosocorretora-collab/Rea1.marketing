@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Análise gratuita do seu plano de saúde | Compare e pague menos</title>
+<meta name="description" content="Compare seu plano de saúde atual com opções de várias operadoras. Análise gratuita e sem compromisso, com atendimento humano pelo WhatsApp.">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<a class="skip" href="#form">Pular para o formulário</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" data-cfg="empresa">[Nome da Empresa]</a>
+    <a class="btn btn-wa btn-sm js-wa" href="#" target="_blank" rel="noopener">💬 <span>Falar no WhatsApp</span></a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO + FORM -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Análise gratuita e sem compromisso</span>
+        <h1>Seu plano de saúde pode custar menos, sem abrir mão da cobertura que você precisa</h1>
+        <p class="lead">Comparamos o que você paga hoje com opções de diferentes operadoras e mostramos, de forma clara, se existe uma alternativa mais adequada ao seu bolso.</p>
+        <p class="mobile-cta"><a class="btn btn-primary btn-block" href="#form">Quero minha análise gratuita</a></p>
+        <ul class="checks">
+          <li>Comparação entre várias operadoras</li>
+          <li>Foco em manter os hospitais e laboratórios que você usa</li>
+          <li>Opções para pessoa física, MEI e empresas</li>
+          <li>Atendimento humano, sem custo para você</li>
+        </ul>
+        <p class="note">Valores, coberturas e carências variam conforme idade, região, operadora e tipo de contratação. A análise não garante redução de valor: em alguns casos o plano atual já é a melhor opção, e nós vamos te dizer isso.</p>
+      </div>
+
+      <div class="card" id="form">
+        <div id="form-area">
+          <h2>Peça sua análise gratuita</h2>
+          <p class="sub">Leva menos de 1 minuto. Um consultor entra em contato pelo WhatsApp.</p>
+          <form id="lead-form" novalidate>
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" autocomplete="name" required>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="whatsapp">WhatsApp</label>
+                <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
+              </div>
+              <div class="field">
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" autocomplete="address-level2" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="situacao">Você tem plano de saúde hoje?</label>
+              <select id="situacao" name="situacao" required>
+                <option value="">Selecione</option>
+                <option>Sim, tenho plano</option>
+                <option>Não, mas quero contratar</option>
+                <option>Tive e cancelei</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="valor">Quanto paga por mês (total)?</label>
+                <select id="valor" name="valor" required>
+                  <option value="">Selecione</option>
+                  <option>Até R$ 500</option>
+                  <option>R$ 500 a R$ 1.000</option>
+                  <option>R$ 1.000 a R$ 2.000</option>
+                  <option>Acima de R$ 2.000</option>
+                  <option>Não tenho plano hoje</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="vidas">Quantas pessoas?</label>
+                <select id="vidas" name="vidas" required>
+                  <option value="">Selecione</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3 a 4</option>
+                  <option>5 ou mais</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cnpj">Possui CNPJ ou MEI ativo?</label>
+              <select id="cnpj" name="cnpj" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="site">Não preencha</label>
+              <input id="site" name="site" tabindex="-1" autocomplete="off">
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="aceite" name="aceite" required>
+              <span>Autorizo o contato por WhatsApp, telefone ou e-mail para receber a análise e propostas de planos de saúde, e declaro que li a <a href="politica-de-privacidade.html" target="_blank">Política de Privacidade</a>. Posso cancelar a qualquer momento.</span>
+            </label>
+            <button class="btn btn-primary btn-block" type="submit" id="btn-enviar">Quero minha análise gratuita</button>
+            <p class="form-msg" id="form-msg" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Como funciona</h2>
+        <p>Um processo simples e transparente, do primeiro contato à decisão.</p>
+      </div>
+      <div class="grid3">
+        <div class="step"><div class="n">1</div><h3>Você conta como é hoje</h3><p>Operadora, valor, quantas pessoas e quais hospitais ou médicos são importantes para você.</p></div>
+        <div class="step"><div class="n">2</div><h3>Comparamos as opções</h3><p>Levantamos alternativas de diferentes operadoras com rede e cobertura compatíveis com o que você precisa.</p></div>
+        <div class="step"><div class="n">3</div><h3>Você decide com calma</h3><p>Explicamos diferenças de rede, coparticipação e carências. Sem pressão: se o plano atual for o melhor, falamos isso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Para quem é a análise</h2>
+        <p>Atendemos diferentes perfis e tipos de contratação.</p>
+      </div>
+      <div class="grid3">
+        <div class="step"><h3>👨‍👩‍👧 Pessoas e famílias</h3><p>Para quem sentiu o peso do reajuste ou da mudança de faixa etária e quer revisar o plano.</p></div>
+        <div class="step"><h3>🧾 MEI e autônomos</h3><p>Quem tem CNPJ ativo pode ter acesso a planos empresariais, conforme regras de cada operadora.</p></div>
+        <div class="step"><h3>🏢 Pequenas empresas</h3><p>Revisão do benefício de saúde da equipe, buscando equilíbrio entre custo e rede credenciada.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <div class="section-title"><h2>Perguntas frequentes</h2></div>
+      <div class="faq">
+        <details>
+          <summary>A análise tem algum custo?</summary>
+          <p>Não. A análise e a cotação são gratuitas e sem compromisso de contratação.</p>
+        </details>
+        <details>
+          <summary>Vou perder as carências se trocar de plano?</summary>
+          <p>Depende. A ANS permite a portabilidade de carências quando são cumpridos alguns requisitos, como tempo mínimo de permanência no plano atual, pagamentos em dia e compatibilidade entre os planos. Verificamos o seu caso antes de qualquer recomendação. Mais informações em <a href="https://www.gov.br/ans" target="_blank" rel="noopener">gov.br/ans</a>.</p>
+        </details>
+        <details>
+          <summary>Vou conseguir manter meu hospital ou médico?</summary>
+          <p>Esse é um dos critérios principais da comparação. Mostramos a rede credenciada de cada opção para você conferir antes de decidir.</p>
+        </details>
+        <details>
+          <summary>Quanto vou economizar?</summary>
+          <p>Não é possível prometer um valor antes da análise. O preço depende da idade de cada pessoa, da região, da operadora, da rede e do tipo de contratação (individual, por adesão ou empresarial).</p>
+        </details>
+        <details>
+          <summary>Vocês são uma operadora de plano de saúde?</summary>
+          <p>Não. Somos uma assessoria que orienta e compara opções. A intermediação e a contratação são feitas por corretora(s) parceira(s) devidamente registrada(s), identificada(s) no fim desta página. Os planos são oferecidos pelas operadoras, que respondem pela prestação dos serviços de saúde.</p>
+        </details>
+        <details>
+          <summary>O que acontece com meus dados?</summary>
+          <p>Usamos seus dados apenas para fazer a análise e entrar em contato sobre ela. Você pode pedir a exclusão a qualquer momento. Detalhes na <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARÊNCIA -->
+  <section class="alt" id="transparencia">
+    <div class="wrap">
+      <div class="transp">
+        <h2>Transparência: quem somos e como trabalhamos</h2>
+        <p><strong data-cfg="empresa">[Nome da Empresa]</strong> (<span data-cfg="razaoSocial">[Razão Social]</span>, CNPJ <span data-cfg="cnpj">[CNPJ]</span>) é uma assessoria de orientação e comparação de planos de saúde. <strong>Não somos operadora de planos de saúde nem seguradora.</strong></p>
+        <p>A intermediação e a contratação dos planos são realizadas por corretora(s) parceira(s):</p>
+        <ul id="lista-parceiros"></ul>
+        <p class="note">Os planos de saúde são regulados pela Agência Nacional de Saúde Suplementar (ANS). Antes de contratar, você recebe as condições gerais, a rede credenciada e o número de registro do produto na ANS. Consulte operadoras e produtos em <a href="https://www.gov.br/ans" target="_blank" rel="noopener">gov.br/ans</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3 data-cfg="empresa">[Nome da Empresa]</h3>
+        <p><span data-cfg="razaoSocial">[Razão Social]</span></p>
+        <p>CNPJ: <span data-cfg="cnpj">[CNPJ]</span></p>
+        <p data-cfg="endereco">[Endereço completo]</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Telefone: <span data-cfg="telefone">[Telefone]</span></p>
+        <p>E-mail: <a class="js-email" href="#" data-cfg="email">[E-mail]</a></p>
+        <p>WhatsApp: <a class="js-wa" href="#" target="_blank" rel="noopener">clique para conversar</a></p>
+        <p data-cfg="horario">[Horário]</p>
+      </div>
+      <div>
+        <h3>Informações</h3>
+        <p><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+        <p><a href="termos-de-uso.html">Termos de Uso</a></p>
+        <p><a href="#transparencia">Quem somos</a></p>
+        <p><a href="#" id="abrir-cookies">Preferências de cookies</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <p><span data-cfg="empresa">[Nome da Empresa]</span> não é operadora de planos de saúde. A comercialização é realizada por corretora(s) parceira(s) registrada(s): <span id="parceiros-rodape"></span>. Preços, coberturas, rede credenciada e carências variam conforme operadora, produto, idade, região e modalidade de contratação, e estão sujeitos às regras da ANS e à análise da operadora. Imagens e textos meramente ilustrativos. Marcas citadas pertencem aos seus titulares.</p>
+      <p>© <span id="ano"></span> <span data-cfg="empresa">[Nome da Empresa]</span>. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-wa wa-float js-wa" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬 WhatsApp</a>
+
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <span>Usamos cookies para medir o desempenho dos nossos anúncios e melhorar sua experiência. Você pode aceitar ou recusar. Saiba mais na <a href="politica-de-privacidade.html">Política de Privacidade</a>.</span>
+  <div class="actions">
+    <button class="btn btn-ghost btn-sm" id="cookie-recusar" type="button">Recusar</button>
+    <button class="btn btn-primary btn-sm" id="cookie-aceitar" type="button">Aceitar</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

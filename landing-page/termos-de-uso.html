@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termos de Uso</title>
+<meta name="robots" content="noindex,follow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="index.html" data-cfg="empresa">[Nome da Empresa]</a><a class="btn btn-primary btn-sm" href="index.html">Voltar</a></div></header>
+<main class="doc">
+<h1>Termos de Uso</h1>
+<p><em>Última atualização: [dd/mm/aaaa]</em></p>
+
+<h2>1. Quem somos</h2>
+<p><strong data-cfg="razaoSocial">[Razão Social]</strong> (<span data-cfg="empresa">[Nome da Empresa]</span>), CNPJ <span data-cfg="cnpj">[CNPJ]</span>, é uma assessoria de orientação e comparação de planos de saúde. <strong>Não somos operadora de planos de saúde nem seguradora</strong>, e não prestamos serviços médicos.</p>
+
+<h2>2. Intermediação por parceiros</h2>
+<p>A intermediação e a contratação dos planos são realizadas por corretora(s) parceira(s) devidamente registrada(s): <span class="js-parceiros"></span>. Os planos são oferecidos e operados pelas respectivas operadoras, registradas na Agência Nacional de Saúde Suplementar (ANS), que são as responsáveis pela cobertura e pelos serviços de saúde.</p>
+
+<h2>3. Sobre a análise e as cotações</h2>
+<ul>
+  <li>A análise é gratuita e não obriga você a contratar nada.</li>
+  <li>Valores, coberturas, rede credenciada, coparticipação e carências dependem da operadora, do produto, da idade dos beneficiários, da região e da modalidade de contratação.</li>
+  <li>As cotações são estimativas e só se tornam definitivas após a aceitação da proposta pela operadora.</li>
+  <li>Não garantimos redução de valor: em alguns casos, o plano atual pode ser a melhor opção.</li>
+  <li>A portabilidade de carências segue as regras da ANS e depende do cumprimento dos requisitos aplicáveis.</li>
+</ul>
+
+<h2>4. Responsabilidades do usuário</h2>
+<p>Você se compromete a informar dados verdadeiros. Informações incorretas podem gerar cotações inadequadas ou recusa da proposta pela operadora.</p>
+
+<h2>5. Marcas</h2>
+<p>Nomes e marcas de operadoras eventualmente citados pertencem aos seus titulares e são mencionados apenas para fins informativos.</p>
+
+<h2>6. Contato</h2>
+<p>E-mail: <span data-cfg="email">[E-mail]</span> — Telefone: <span data-cfg="telefone">[Telefone]</span> — Endereço: <span data-cfg="endereco">[Endereço]</span>.</p>
+
+<h2>7. Foro</h2>
+<p>Fica eleito o foro da comarca de [Cidade/UF], ressalvados os direitos do consumidor previstos no Código de Defesa do Consumidor.</p>
+</main><script>(function(){var C=window.SITE_CONFIG||{};document.querySelectorAll("[data-cfg]").forEach(function(el){var v=C[el.getAttribute("data-cfg")];if(v)el.textContent=v;});var p=(C.parceiros||[]).map(function(x){return x.nome+" (CNPJ "+x.cnpj+", SUSEP "+x.susep+")";}).join("; ");document.querySelectorAll(".js-parceiros").forEach(function(el){el.textContent=p;});})();</script></body></html>

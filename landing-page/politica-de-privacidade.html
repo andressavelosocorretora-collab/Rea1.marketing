@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade</title>
+<meta name="robots" content="noindex,follow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="index.html" data-cfg="empresa">[Nome da Empresa]</a><a class="btn btn-primary btn-sm" href="index.html">Voltar</a></div></header>
+<main class="doc">
+<h1>Política de Privacidade</h1>
+<p><em>Última atualização: [dd/mm/aaaa]</em></p>
+<p>Esta política explica como <strong data-cfg="razaoSocial">[Razão Social]</strong>, nome fantasia <span data-cfg="empresa">[Nome da Empresa]</span>, CNPJ <span data-cfg="cnpj">[CNPJ]</span>, com sede em <span data-cfg="endereco">[Endereço]</span> ("nós"), trata os dados pessoais coletados nesta página, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+
+<h2>1. Quais dados coletamos</h2>
+<ul>
+  <li><strong>Dados que você informa no formulário:</strong> nome, WhatsApp, cidade, situação atual de plano de saúde, faixa de valor pago, número de pessoas e se possui CNPJ/MEI.</li>
+  <li><strong>Dados de navegação</strong> (somente se você aceitar os cookies): páginas visitadas, origem do acesso (ex.: anúncio do Google ou Meta), tipo de dispositivo e identificadores de cookies.</li>
+</ul>
+<p>Não solicitamos nesta página dados sobre doenças ou condições de saúde. Caso sejam necessários para uma proposta (por exemplo, a declaração de saúde exigida pela operadora), eles serão tratados apenas com seu consentimento específico e para essa finalidade.</p>
+
+<h2>2. Para que usamos os dados</h2>
+<ul>
+  <li>Entrar em contato com você para realizar a análise e apresentar cotações de planos de saúde (base legal: consentimento e procedimentos preliminares a contrato).</li>
+  <li>Medir e melhorar o desempenho dos nossos anúncios e da página (base legal: consentimento, por meio do aviso de cookies).</li>
+  <li>Cumprir obrigações legais e regulatórias.</li>
+</ul>
+
+<h2>3. Com quem compartilhamos</h2>
+<ul>
+  <li><strong>Corretora(s) parceira(s)</strong> responsável(is) pela intermediação e contratação: <span class="js-parceiros"></span>.</li>
+  <li><strong>Operadoras de planos de saúde</strong>, somente quando você pedir uma cotação ou proposta formal.</li>
+  <li><strong>Fornecedores de tecnologia</strong> que nos ajudam a operar (hospedagem, planilhas/CRM, WhatsApp, Google e Meta para medição de anúncios).</li>
+</ul>
+<p>Não vendemos seus dados.</p>
+
+<h2>4. Por quanto tempo guardamos</h2>
+<p>Mantemos os dados pelo tempo necessário para o atendimento e por até [12] meses após o último contato, salvo obrigação legal de guarda por prazo maior. Depois disso, os dados são excluídos ou anonimizados.</p>
+
+<h2>5. Seus direitos</h2>
+<p>Você pode, a qualquer momento: confirmar se tratamos seus dados, acessá-los, corrigi-los, pedir sua exclusão, revogar o consentimento, pedir a portabilidade e se opor ao contato. Basta escrever para <strong data-cfg="email">[E-mail]</strong> ou responder "PARAR" no WhatsApp.</p>
+
+<h2>6. Cookies</h2>
+<p>Usamos cookies de medição (Google e Meta) somente se você clicar em "Aceitar" no aviso de cookies. Você pode mudar sua escolha no link "Preferências de cookies", no rodapé da página.</p>
+
+<h2>7. Segurança</h2>
+<p>Adotamos medidas técnicas e administrativas razoáveis para proteger seus dados contra acesso não autorizado, perda ou alteração.</p>
+
+<h2>8. Encarregado de dados (DPO)</h2>
+<p>Responsável: [Nome do encarregado] — e-mail: <span data-cfg="email">[E-mail]</span>.</p>
+
+<h2>9. Alterações</h2>
+<p>Esta política pode ser atualizada. A versão vigente estará sempre nesta página, com a data da última atualização.</p>
+</main><script>(function(){var C=window.SITE_CONFIG||{};document.querySelectorAll("[data-cfg]").forEach(function(el){var v=C[el.getAttribute("data-cfg")];if(v)el.textContent=v;});var p=(C.parceiros||[]).map(function(x){return x.nome+" (CNPJ "+x.cnpj+", SUSEP "+x.susep+")";}).join("; ");document.querySelectorAll(".js-parceiros").forEach(function(el){el.textContent=p;});})();</script></body></html>
